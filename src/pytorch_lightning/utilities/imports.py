@@ -28,6 +28,7 @@ _TORCH_LESSER_EQUAL_1_10_2 = compare_version("torch", operator.le, "1.10.2")
 _TORCH_GREATER_EQUAL_1_11 = compare_version("torch", operator.ge, "1.11.0")
 _TORCH_GREATER_EQUAL_1_12 = compare_version("torch", operator.ge, "1.12.0")
 _TORCH_GREATER_EQUAL_1_13 = compare_version("torch", operator.ge, "1.13.0", use_base_version=True)
+_TORCHMETRICS_GREATER_EQUAL_0_9_1 = compare_version("torchmetrics", operator.ge, "0.9.1")
 
 _APEX_AVAILABLE = module_available("apex.amp")
 _DALI_AVAILABLE = module_available("nvidia.dali")
