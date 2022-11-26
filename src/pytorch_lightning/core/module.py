@@ -513,7 +513,7 @@ class LightningModule(
                 would produce a deadlock as not all processes would perform this log call.
         """
 
-        kwargs = {}
+        kwargs: Dict[str, bool] = {}
 
         if isinstance(dictionary, MetricCollection):
             kwargs["keep_base"] = False
