@@ -77,7 +77,7 @@ jobs:
           PACKAGE_NAME: ${{ matrix.pkg-name }}
           FREEZE_REQUIREMENTS: 1
         run: |
-          pip install -e . [dev] --find-links https://download.pytorch.org/whl/cpu/torch_stable.html
+          pip install -e .[dev] --find-links https://download.pytorch.org/whl/cpu/torch_stable.html
           pip list
 
       - name: Setup Node.js
