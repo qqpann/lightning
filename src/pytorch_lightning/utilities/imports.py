@@ -28,7 +28,6 @@ _TORCH_GREATER_EQUAL_1_12 = compare_version("torch", operator.ge, "1.12.0")
 _TORCH_GREATER_EQUAL_1_13 = compare_version("torch", operator.ge, "1.13.0")
 _TORCH_GREATER_EQUAL_1_14 = compare_version("torch", operator.ge, "1.14.0", use_base_version=True)
 
-_APEX_AVAILABLE = module_available("apex.amp")
 _DALI_AVAILABLE = module_available("nvidia.dali")
 _HABANA_FRAMEWORK_AVAILABLE = package_available("habana_frameworks")
 _HIVEMIND_AVAILABLE = package_available("hivemind")
