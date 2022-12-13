@@ -151,7 +151,6 @@ def test_toggle_untoggle_2_optimizers_no_shared_parameters(tmpdir):
             optimizer_idx,
             closure,
             on_tpu=False,
-            using_native_amp=False,
             using_lbfgs=False,
         ):
             if optimizer_idx == 0:
@@ -215,7 +214,6 @@ def test_toggle_untoggle_3_optimizers_shared_parameters(tmpdir):
             optimizer_idx,
             closure,
             on_tpu=False,
-            using_native_amp=False,
             using_lbfgs=False,
         ):
             if optimizer_idx == 0:
